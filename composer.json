@@ -1,0 +1,21 @@
+{
+  "name": "sitesoft/laravel-apis",
+  "description": "Init swagger and connect to Sitesoft APIS",
+  "authors": [
+    {
+      "name": "Sergey Raev",
+      "email": "sergey.raev@sitesoft.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "zircote/swagger-php": "*",
+    "barryvdh/laravel-cors": "*",
+    "sitesoft/laravel-config-writer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sitesoft\\LaravelApis\\": "src"
+    }
+  }
+}
