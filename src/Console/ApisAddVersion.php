@@ -21,9 +21,9 @@ class ApisAddVersion extends Apis
      *
      * @var string
      */
-    protected $description = 'Add new version on Sitesoft APIS';
+    protected $description = 'Add new version on Kapibara';
 
-    protected $apis_url = 'http://apis.sitesoft.ru/api/add-version';
+    protected $apis_url = 'http://kapibara.sitesoft.ru/api/add-version';
 
     /**
      * Create a new command instance.
