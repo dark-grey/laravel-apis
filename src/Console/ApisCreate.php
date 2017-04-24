@@ -22,9 +22,9 @@ class ApisCreate extends Apis
      *
      * @var string
      */
-    protected $description = 'Create a new project and first version on Sitesoft APIS';
+    protected $description = 'Create a new project and first version on Kapibara';
 
-    protected $apis_url = 'http://apis.sitesoft.ru/api/create-project';
+    protected $apis_url = 'http://kapibara.sitesoft.ru/api/create-project';
 
     /**
      * Create a new command instance.
@@ -97,7 +97,7 @@ class ApisCreate extends Apis
             } catch (\Exception $e) {
                 $this->showRouteError($route);
             }
-            $this->info("Проект '" . $this->argument('name') . "' успешно добавлен на Sitesoft APIS.");
+            $this->info("Проект '" . $this->argument('name') . "' успешно добавлен на Kapibara.");
 
             $apiDir = str_replace('\\', '/', $apiDir);
             $this->writePathToConfig($apiDir);
