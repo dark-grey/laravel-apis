@@ -61,6 +61,7 @@ $ php artisan swaggen
 ```
 Папки для генерации задаются в файле настроек `config/apis.php` в параметре `paths`.
 Swagger просканирует эти папки и создаст в каждой свой `swagger.json`.
+
 Каждый такой файл должен быть доступен из вне, для этого при `apis:create-project` и `apis:add-version` по пути указанному в `<path>` создается файл `SwaggerController.php`
 
 #### Поддержка Cross-Origin Resource Sharing (CORS)
