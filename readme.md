@@ -55,11 +55,13 @@ $ php artisan apis:create-project MyApi 1 http://test.com/api --path="Api/v1"
 5. добавит в файл настроек `apis.php` путь для генерации `swagger.json`
 
 #### Генерация `swagger.json`
+Данный файл генерируется из ваших doc-блоков библиотекой [swagger-php](https://github.com/zircote/swagger-php) отдельно для каждой версии api.
 ```
 $ php artisan swaggen
 ```
 Папки для генерации задаются в файле настроек `config/apis.php` в параметре `paths`.
 Swagger просканирует эти папки и создаст в каждой свой `swagger.json`.
+Каждый такой файл должен быть доступен из вне, для этого при `apis:create-project` и `apis:add-version` по пути указанному в `<path>` создается файл `SwaggerController.php`
 
 #### Поддержка Cross-Origin Resource Sharing (CORS)
 
