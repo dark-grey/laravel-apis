@@ -9,7 +9,7 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "zircote/swagger-php": "*",
+    "zircote/swagger-php": "^2.0",
     "barryvdh/laravel-cors": "*",
     "sitesoft/laravel-config-writer": "*"
   },
