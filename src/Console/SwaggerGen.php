@@ -47,7 +47,7 @@ class SwaggerGen extends Apis
 
         foreach ($paths as $path) {
             $full_path = app_path('Http/Controllers/'.$path);
-            \Swagger\scan($full_path, ['exclude' => '/v[0-9]+/'])->saveAs($full_path.'/'.$this->swagger_json);
+            \OpenApi\scan($full_path, ['exclude' => '/v[0-9]+/'])->saveAs($full_path.'/'.$this->swagger_json);
             $this->line('Written to '.$full_path.'/'.$this->swagger_json);
         }
 
